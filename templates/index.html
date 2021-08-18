@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Income Classification
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    
+        <!-- <form method="POST" <h1>Enter Data</h1><br> <input type="number" name="a1" id="a1" min='17' max='90'><br>
+        <input type="number" name="a2" id="a2"><br>
+        <input type="number" name="a3" id="a3"><br>
+        <input type="number" name="a4" id="a4"><br>
+        <input type="number" name="a5" id="a5"><br>
+        <input type="number" name="a6" id="a6"><br>
+        <input type="number" name="a7" id="a7"><br>   
+        <input type="submit" name="submit" name="submit">
+    </form> -->
+    
+    <div class="container">
+    
+        <h1 Style="text-align:center">Income Class Prediction</h1> <br>
+
+        <form method="POST">
+            <div class="form-group row">
+                <label for="Age" class="col-sm-2 col-form-label">Age</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" min='17' max='90' name="a1" placeholder="Age (17 - 90)">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="fnlwgt" class="col-sm-2 col-form-label">fnlwgt</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" min='13769' max='1484705' name="a2" placeholder="fnlwgt (13769 - 1484705)">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="education-num" class="col-sm-2 col-form-label">education-num</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" min='1' max='16' name="a3" placeholder="education-num (1 - 16)">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="sex" class="col-sm-2 col-form-label">sex</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" min='0' max='1' name="a4"
+                        placeholder="sex (Enter 1 for male and 0 for female)">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="capital-gain" class="col-sm-2 col-form-label">capital-gain</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" min='0' max='99999' name="a5" placeholder="capital-gain (0 - 99999)">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="capital-loss" class="col-sm-2 col-form-label">capital-loss</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" min='0' max='4356' name="a6" placeholder="capital-loss (0 - 4356)">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="hours-per-week" class="col-sm-2 col-form-label">hours-per-week</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" min='1' max='99' name="a7" placeholder="hours-per-week (1 - 99)">
+                </div>
+            </div>
+
+
+
+
+            <div class="form-group row">
+                <div class="col-sm-12 offset-xs-4 ">
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        <h3>Predicted Result</h3>
+        <h3>{{x1}}</h3>
+    </div>
+</body>
+
+</html>
