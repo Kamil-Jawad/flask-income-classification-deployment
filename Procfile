@@ -1,1 +1,1 @@
-web: gunicorn Income_Classification:app
+web: gunicorn app:app
